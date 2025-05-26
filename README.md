@@ -10,7 +10,6 @@ This project automates the setup of a LAMP stack (Linux, Apache, MySQL, PHP) usi
 - Works on Ubuntu/Debian systems
 
 ## Requirements
-
 - Ansible installed on control node
 - SSH access to target node
 
@@ -18,6 +17,8 @@ This project automates the setup of a LAMP stack (Linux, Apache, MySQL, PHP) usi
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/ansible-lamp-stack.git
-   cd ansible-lamp-stack
+   git clone https://github.com/pranali2482/Ansible-LAMP-Stack.git
+   cd Ansible-LAMP-Stack
+   ansible-playbook -i inventory lamp.yml
+
 
