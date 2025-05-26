@@ -1,0 +1,21 @@
+- name: Install MySQL
+  apt:
+    name: mysql-server
+    state: present
+    update_cache: true
+
+- name: Start and enable MySQL
+  service:
+    name: mysql
+    state: started
+    enabled: true
+
+- name: Set MySQL root password
+  mysql_user:
+    login_user: pranali
+    login_password: ''
+    name: root
+    password: "Pranali@123"
+    host_all: true
+  ignore_errors: true
+

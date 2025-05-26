@@ -1,0 +1,12 @@
+- name: Install Apache
+  apt:
+    name: apache2
+    state: present
+    update_cache: true
+
+- name: Enable and start Apache service
+  service:
+    name: apache2
+    state: started
+    enabled: true
+
