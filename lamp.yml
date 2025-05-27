@@ -1,9 +1,11 @@
 - name: Setup LAMP Stack
-  hosts: all
-  become: true
+  hosts: web
+  become: yes
+
+  vars:
+    mysql_password: "pranali123"
 
   roles:
     - apache
     - mysql
     - php
-
