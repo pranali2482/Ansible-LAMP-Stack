@@ -20,8 +20,12 @@ This project automates the setup of a LAMP stack (Linux, Apache, MySQL, PHP) usi
    git clone https://github.com/pranali2482/Ansible-LAMP-Stack.git
    cd Ansible-LAMP-Stack
    ansible-playbook -i inventory lamp.yml
+   ```
+   ![image](https://github.com/user-attachments/assets/b2d74a65-8804-49cb-a41f-f906f6ae857c)
+   
 
-   ![image](https://github.com/user-attachments/assets/49cacf3a-80f7-400f-9a8d-7c29f3e8127b)
+
+   
    
    
 
