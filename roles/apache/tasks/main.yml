@@ -1,12 +1,11 @@
 - name: Install Apache
   apt:
     name: apache2
-    state: present
+    state: present        # Install apache if not already installed
     update_cache: true
 
 - name: Enable and start Apache service
   service:
     name: apache2
-    state: started
-    enabled: true
-
+    state: started       # Start Apache service
+    enabled: true        # Enable Apache service to start on boot
